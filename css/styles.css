@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+body,
+a {
+  font-family: 'Merriweather', serif;
+}
+
+/* Override Bootstrap defaults here */
+/* Hero adjustments */
+.hero {
+  background-image: url('../images/hero-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar gradient (Seattle Seahawks blue to green) */
+.navbar {
+  background: linear-gradient(
+    to right,
+    #4300FF,
+    #0065F8,
+    #00CAFF,
+    #00FFDE
+  );
+}
+
+/* Ensure navbar text is light */
+.navbar .nav-link,
+.navbar {
+  color: black !important;
+}
+
+/* Navbar link hover and active state */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+  color: #5409DA !important;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Limelight', cursive;
+  color: #f8f9fa !important;
+  font-size: 2rem;
+}
+
+/* Hamburger icon in  #5409DA */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%235409DA' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Projects grid hover effect */
+.projects-grid .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Contact form centering */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}

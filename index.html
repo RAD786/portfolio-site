@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Dupont | Portfolio & Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar with Offcanvas Hamburger Menu -->
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="#">RAD</a>
+      <!-- Hamburger Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Hi, I'm Ryan</h1>
+        <p class="lead">A full stack developer</p>
+        <a href="#projects" class="btn btn-light btn-lg">View Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Projects</h2>
+        <div class="row g-4 projects-grid justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./images/mern-placeholder.png" class="card-img-top mx-auto d-block" alt="Project Name">
+              <div class="card-body d-flex flex-column align-items-center text-center">
+                <h5 class="card-title fw-bold">Job Application Tracker</h5>
+                <p class="card-text">User Auth, Dashboard, CRUD, Filter & Search, and Responsive UI</p>
+                <a href="https://github.com/your/project" class="mt-auto btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./images/mern-placeholder.png" class="card-img-top mx-auto d-block" alt="Project Name">
+              <div class="card-body d-flex flex-column align-items-center text-center">
+                <h5 class="card-title">Pickleball Ladder Scorecard</h5>
+                <p class="card-text">User Auth, </p>
+                <a href="https://github.com/your/project" class="mt-auto btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="./images/mern-placeholder.png" class="card-img-top mx-auto d-block" alt="Project Name">
+              <div class="card-body d-flex flex-column align-items-center text-center">
+                <h5 class="card-title">E-Commerce</h5>
+                <p class="card-text">Product Catalog, Shopping Cart, Checkout Simulation, Admin Order History</p>
+                <a href="https://github.com/your/project" class="mt-auto btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-light py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Blog</h2>
+        <div id="posts" class="row g-4 justify-content-center">
+          <div id="loading-indicator" class="col-12 text-center">
+            <p>Loading blog posts...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-5 pb-2">
+      <div class="container">
+        <h2 class="mb-4 text-center">Contact Me</h2>
+        <form id="contact-form" class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+  <footer class="bg-primary text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">Email: <a href="mailto:ryanandrewdupont@gmail.com" class="text-decoration-underline text-white">ryanandrewdupont@gmail.com</a> | Phone: <a href="tel:+7865120600" class="text-decoration-underline text-white">(786) 512-0600</a></p>
+      <p class="mb-2">
+        <a href="https://linkedin.com/in/yourprofile" class="text-white mx-2 fw-semibold">LinkedIn</a>
+        <a href="https://github.com/yourusername" class="text-white mx-2 fw-semibold">GitHub</a>
+      </p>
+      <small>&copy; 2025 Ryan Dupont. All rights reserved.</small>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Welcome to My Blog",
+    "file": "post1.md",
+    "date": "2025-05-30"
+  },
+  {
+    "title": "Tips for MERN Stack",
+    "file": "post2.md",
+    "date": "2025-05-28"
+  }
+]
