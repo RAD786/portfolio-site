@@ -281,6 +281,20 @@ main {
   background: var(--accent-strong);
 }
 
+.form-status {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.form-status.is-success {
+  color: var(--accent-strong);
+}
+
+.form-status.is-error {
+  color: #b91c1c;
+}
+
 .site-footer {
   background: #0f172a;
   color: #e2e8f0;

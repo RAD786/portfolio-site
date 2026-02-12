@@ -132,10 +132,7 @@
           <h2 class="reveal">Contact Me</h2>
           <p class="section-subtitle reveal">Have a role or a project in mind? Share the details and I'll respond quickly.</p>
         </div>
-        <form id="contact-form" class="row g-3" action="https://formsubmit.co/ryanandrewdupont@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Portfolio Contact Form">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
+        <form id="contact-form" class="row g-3">
           <div class="col-md-6">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" id="name" name="name" class="form-control" required>
@@ -148,8 +145,15 @@
             <label for="message" class="form-label">Your Message</label>
             <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
           </div>
+          <div class="col-12 d-none">
+            <label for="company" class="form-label">Company</label>
+            <input type="text" id="company" name="company" class="form-control" autocomplete="off">
+          </div>
           <div class="col-12">
             <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+          <div class="col-12">
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
       </div>

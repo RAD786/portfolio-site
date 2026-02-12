@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-site-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site with Netlify Functions contact form",
+  "dependencies": {
+    "nodemailer": "^6.9.15"
+  }
+}
