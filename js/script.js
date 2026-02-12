@@ -1,4 +1,3 @@
-// Auto-close Offcanvas menu on link click
 document.querySelectorAll('#offcanvasNav .nav-link').forEach(link => {
   link.addEventListener('click', () => {
     const offcanvasEl = document.getElementById('offcanvasNav');
@@ -7,7 +6,7 @@ document.querySelectorAll('#offcanvasNav .nav-link').forEach(link => {
   });
 });
 
-// Reveal animations on scroll
+
 const revealItems = document.querySelectorAll('.reveal');
 if (revealItems.length) {
   const observer = new IntersectionObserver(

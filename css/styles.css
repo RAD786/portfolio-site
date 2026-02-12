@@ -43,7 +43,6 @@ main {
   overflow: hidden;
 }
 
-/* Navigation */
 .site-nav {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
@@ -78,7 +77,6 @@ main {
   background: #0f172a;
 }
 
-/* Hero */
 .hero {
   padding: 6rem 0 5rem;
   position: relative;
@@ -203,7 +201,6 @@ main {
   font-weight: 500;
 }
 
-/* Sections */
 .section {
   padding: 5rem 0;
 }
@@ -222,7 +219,6 @@ main {
   color: rgba(15, 23, 42, 0.7);
 }
 
-/* Projects */
 .projects-grid .card {
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
@@ -255,7 +251,6 @@ main {
   background: var(--accent);
 }
 
-/* Contact */
 #contact-form {
   max-width: 640px;
   margin: 0 auto;
@@ -286,7 +281,6 @@ main {
   background: var(--accent-strong);
 }
 
-/* Footer */
 .site-footer {
   background: #0f172a;
   color: #e2e8f0;
@@ -297,7 +291,6 @@ main {
   color: #e2e8f0;
 }
 
-/* Animations */
 .reveal {
   opacity: 0;
   transform: translateY(22px);
